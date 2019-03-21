@@ -31,9 +31,7 @@ imagen.onclick = function (){
 var boton  = document.querySelector('button');
 var titulo = document.querySelector('h1');
 
-boton.onclick = function() {
-    estableceNombreUsuario();
-}
+
 
 
 if (!localStorage.getItem('nombre')) {
@@ -51,6 +49,8 @@ function estableceNombreUsuario() {
     titulo.textContent = 'Mozilla es fresco,' + miNombre;
 }
 
-
+boton.onclick = function() {
+    estableceNombreUsuario();
+}
 
 
